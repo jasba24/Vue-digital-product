@@ -1,13 +1,15 @@
 <template>
-	<div>
+	<header class="header">
 		<div class="header__img">
 			<img :src="brand" alt="logo" />
 		</div>
 
-		<div class="header__options" v-for="link in links" :key="link.name">
-			<a :href="link.href">{{ link.name }}</a>
+		<div class="header__options">
+			<a v-for="link in links" :key="link.name" :href="link.href">{{
+				link.name
+			}}</a>
 		</div>
-	</div>
+	</header>
 </template>
 
 <script>
@@ -25,4 +27,33 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style scoped>
+.header {
+	width: 100%;
+	height: 70px;
+	background-color: var(--primary-color);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.header__img {
+	padding: 1%;
+}
+
+.header__options {
+	padding: 1%;
+}
+
+.header__options a {
+	text-decoration: none;
+	margin-left: 20px;
+	color: black;
+	font-weight: normal;
+}
+
+.header__options a:hover {
+	color: white;
+}
+</style>
