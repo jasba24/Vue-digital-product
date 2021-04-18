@@ -1,6 +1,9 @@
 <template>
 	<main id="app">
+		<home></home>
+		<producto></producto>
 		<venta></venta>
+		<not-found></not-found>
 		<footer class="footer">
 			<a href="#">Terminos y condiciones</a
 			><a
@@ -14,17 +17,19 @@
 </template>
 
 <script>
-// import Home from "@/views/Home"
-// import Producto from "@/views/Producto"
-import Venta from '@/views/Venta'
+import Home from "@/views/Home"
+import Producto from "@/views/Producto"
+import Venta from "@/views/Venta"
+import NotFound from "@/components/NotFound"
 
 export default {
 	name: "App",
 
 	components: {
-		// Home,
-		// Producto,
+		Home,
+		Producto,
 		Venta,
+		NotFound,
 	},
 }
 </script>
@@ -39,9 +44,13 @@ export default {
 
 body {
 	font-family: "Open Sans", sans-serif;
-	background-color: var(--secondary-color);
 	margin: 0;
 }
+
+#app {
+	background-color: var(--secondary-color);
+}
+
 
 .Hero {
 	padding: 15%;
