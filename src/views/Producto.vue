@@ -3,17 +3,16 @@
 		<product-header :brand="brand" :links="links"></product-header>
 		<div class="container__productos">
 			<h1>Productos</h1>
-			<section id="Faqs">
-				<product-faqs
-					v-for="faq in faqs"
-					:key="faq.title"
-					:FaqsDescription="productText"
-					:FaqsDescription2="productText"
-					:FaqsTitle="faq.title"
-					:FaqsSrc="faq.src"
-					:hasIntermedio="faq.hasIntermedio"
-				></product-faqs>
-			</section>
+			<product-faqs
+				v-for="faq in faqs"
+				isProducto
+				:key="faq.title"
+				:FaqsDescription="productText"
+				:FaqsDescription2="productText"
+				:FaqsTitle="faq.title"
+				:FaqsSrc="faq.src"
+				:hasIntermedio="faq.hasIntermedio"
+			></product-faqs>
 		</div>
 	</main>
 </template>
@@ -79,4 +78,5 @@ export default {
 	border: none;
 	color: black;
 }
+
 </style>

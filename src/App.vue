@@ -53,7 +53,7 @@ body {
 .products {
 	display: flex;
 	justify-content: center;
-	background-image: url("/assets/fondo.webp");
+	background-image: url("./assets/fondo.webp");
 	height: 50px;
 	background-size: cover;
 	background-position: center top;
