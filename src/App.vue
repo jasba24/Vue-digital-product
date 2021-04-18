@@ -1,7 +1,5 @@
 <template>
 	<main id="app">
-		<home></home>
-		<producto></producto>
 		<venta></venta>
 		<footer class="footer">
 			<a href="#">Terminos y condiciones</a
@@ -16,16 +14,16 @@
 </template>
 
 <script>
-import Home from "@/views/Home"
-import Producto from "@/views/Producto"
+// import Home from "@/views/Home"
+// import Producto from "@/views/Producto"
 import Venta from '@/views/Venta'
 
 export default {
 	name: "App",
 
 	components: {
-		Home,
-		Producto,
+		// Home,
+		// Producto,
 		Venta,
 	},
 }
