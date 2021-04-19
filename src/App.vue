@@ -1,9 +1,6 @@
 <template>
 	<main id="app">
-		<home></home>
-		<producto></producto>
-		<venta></venta>
-		<not-found></not-found>
+		<router-view></router-view>
 		<footer class="footer">
 			<a href="#">Terminos y condiciones</a
 			><a
@@ -17,20 +14,8 @@
 </template>
 
 <script>
-import Home from "@/views/Home"
-import Producto from "@/views/Producto"
-import Venta from "@/views/Venta"
-import NotFound from "@/components/NotFound"
-
 export default {
 	name: "App",
-
-	components: {
-		Home,
-		Producto,
-		Venta,
-		NotFound,
-	},
 }
 </script>
 
@@ -50,7 +35,6 @@ body {
 #app {
 	background-color: var(--secondary-color);
 }
-
 
 .Hero {
 	padding: 15%;
