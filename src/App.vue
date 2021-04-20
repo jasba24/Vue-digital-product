@@ -1,21 +1,19 @@
 <template>
 	<main id="app">
 		<router-view />
-		<footer class="footer">
-			<a href="#">Terminos y condiciones</a
-			><a
-				target="_blank"
-				href="mailto:contacto@mail.com"
-				rel="noopener noreferrer"
-				>contacto@mail.com</a
-			>
-		</footer>
+		<product-footer />
 	</main>
 </template>
 
 <script>
+import ProductFooter from "@/components/ProductFooter"
+
 export default {
 	name: "App",
+
+	components: {
+		ProductFooter,
+	},
 }
 </script>
 
@@ -74,7 +72,7 @@ body {
 	margin: auto;
 }
 
-.footer {
+#footer {
 	width: 100%;
 	height: 60px;
 	background-color: var(--black);
@@ -83,13 +81,13 @@ body {
 	align-items: center;
 }
 
-.footer a {
+#footer a {
 	color: white;
 	text-decoration: none;
 	margin: 0 20px;
 }
 
-.footer a:hover {
+#footer a:hover {
 	color: var(--primary-color);
 }
 

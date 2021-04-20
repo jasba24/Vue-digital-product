@@ -1,6 +1,6 @@
 <template>
 	<main>
-		<product-header :brand="brand" :links="links"></product-header>
+		<product-header :brand="brand" :links="links" footer="#footer"></product-header>
 		<div class="container__productos">
 			<h1>Productos</h1>
 			<product-faqs
@@ -38,10 +38,6 @@ export default {
 				"Miles de productos hay en el mercado, pero nada como una caja con gatitos",
 			links: [
 				{
-					href: "#footer",
-					name: "Faqs",
-				},
-				{
 					href: "/",
 					name: "Home",
 				},
@@ -78,5 +74,4 @@ export default {
 	border: none;
 	color: black;
 }
-
 </style>

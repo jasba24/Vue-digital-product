@@ -5,6 +5,7 @@
 		</div>
 
 		<div class="header__options">
+			<a v-if="footer" :href="footer">Faqs</a>
 			<router-link v-for="link in links" :key="link.name" :to="link.href">{{
 				link.name
 			}}</router-link>
@@ -16,12 +17,9 @@
 export default {
 	name: "ProductHeader",
 	props: {
+		footer: String,
 		brand: String,
 		links: Array,
-	},
-
-	data() {
-		return {}
 	},
 }
 </script>

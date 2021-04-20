@@ -1,6 +1,6 @@
 <template>
 	<main id="app">
-		<product-header :brand="brand" :links="links" />
+		<product-header :brand="brand" :links="links" footer="#footer" />
 		<product-hero :heroTitle="heroTitle" />
 		<section class="products">
 			<product-item
@@ -95,10 +95,6 @@ export default {
 			heroTitle:
 				"Este es un producto increíble, no que haces viendo que lo puedes tener",
 			links: [
-				{
-					href: "#footer",
-					name: "Faqs",
-				},
 				{
 					href: "/producto",
 					name: "Producto y descripción",
