@@ -1,6 +1,6 @@
 <template>
 	<main id="app">
-		<router-view></router-view>
+		<router-view />
 		<footer class="footer">
 			<a href="#">Terminos y condiciones</a
 			><a

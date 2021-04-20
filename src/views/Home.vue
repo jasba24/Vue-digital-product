@@ -30,15 +30,6 @@
 				:mentionSrc="mention.src"
 			/>
 		</section>
-		<footer class="footer">
-			<a href="#">Terminos y condiciones</a
-			><a
-				target="_blank"
-				href="mailto:contacto@mail.com"
-				rel="noopener noreferrer"
-				>contacto@mail.com</a
-			>
-		</footer>
 	</main>
 </template>
 
@@ -53,7 +44,7 @@ import people1 from "@/assets/people1.webp"
 import people2 from "@/assets/people2.webp"
 import people3 from "@/assets/people3.webp"
 import people4 from "@/assets/people4.webp"
-import '../assets/fondo.webp'
+import "../assets/fondo.webp"
 import ProductHeader from "@/components/ProductHeader.vue"
 import ProductHero from "../components/ProductHero.vue"
 import ProductItem from "@/components/ProductItem"
@@ -109,7 +100,7 @@ export default {
 					name: "Faqs",
 				},
 				{
-					href: "Producto.vue",
+					href: "/producto",
 					name: "Producto y descripción",
 				},
 			],

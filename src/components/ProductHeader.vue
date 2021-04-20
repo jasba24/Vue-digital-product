@@ -5,9 +5,9 @@
 		</div>
 
 		<div class="header__options">
-			<a v-for="link in links" :key="link.name" :href="link.href">{{
+			<router-link v-for="link in links" :key="link.name" :to="link.href">{{
 				link.name
-			}}</a>
+			}}</router-link>
 		</div>
 	</header>
 </template>

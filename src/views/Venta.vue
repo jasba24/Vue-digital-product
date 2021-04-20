@@ -33,7 +33,7 @@ export default {
 			CatBox: CatBox,
 			links: [
 				{
-					href: "Home.vue",
+					href: "/",
 					name: "Regresa al home",
 				},
 			],

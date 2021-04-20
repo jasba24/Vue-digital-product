@@ -13,17 +13,17 @@ export default new Router({
 	routes: [
 		{
 			path: "/",
-			name: "Home",
+			name: "home",
 			component: Home,
 		},
 		{
 			path: "/producto",
-			name: "Producto",
+			name: "producto",
 			component: Producto,
 		},
 		{
 			path: "/venta",
-			name: "Venta",
+			name: "venta",
 			component: Venta,
 		},
 		{

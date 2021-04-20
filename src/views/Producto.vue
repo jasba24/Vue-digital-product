@@ -42,11 +42,11 @@ export default {
 					name: "Faqs",
 				},
 				{
-					href: "Home.vue",
+					href: "/",
 					name: "Home",
 				},
 				{
-					href: "Venta.vue",
+					href: "/venta",
 					name: "Comprar",
 				},
 			],
