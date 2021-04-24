@@ -5,7 +5,7 @@
 		</div>
 
 		<div class="header__options">
-			<a v-if="footer" :href="footer">Faqs</a>
+			<router-link v-if="footer" :to="footer" :hash="footer">Faqs</router-link>
 			<router-link v-for="link in links" :key="link.name" :to="link.href">{{
 				link.name
 			}}</router-link>

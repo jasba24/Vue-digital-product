@@ -10,6 +10,14 @@ Vue.use(Router)
 export default new Router({
 	mode: "history",
 
+	scrollBehavior(to) {
+		if (to.hash) {
+			return {
+				selector: to.hash,
+			}
+		}
+	},
+
 	routes: [
 		{
 			path: "/",
